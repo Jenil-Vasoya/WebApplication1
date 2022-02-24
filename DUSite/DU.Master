@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DU.master.cs" Inherits="WebApplication1.DU" %>
+
+<!DOCTYPE html>
+
+<html>
+     <link href="../Bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-grid.rtl.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-utilities.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="../Bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <script src="../Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.esm.js"></script>
+    <script src="../Bootstrap/js/bootstrap.esm.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+<head runat="server">
+    
+   
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row" style="margin-left: 1360px">
+            Darshan University
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+    </form>
+</body>
+</html>

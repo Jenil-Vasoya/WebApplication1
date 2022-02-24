@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AddressBook.master.cs" Inherits="WebApplication1.Address_Book.Content.AddressBook" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/JScript.js" ></script>
+    <title>Address Book</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        .Color {
+            background-color: #feae96;
+            background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+        }
+
+        .Header {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="overflow:hidden">
+
+        <div class="Color" style="text-align: center;">
+            <asp:Label ID="lblHeader" class="Header" runat="server" Font-Names="News706 BT" ForeColor="White" Text="Addressbook"></asp:Label>
+            <hr />
+
+            <asp:HyperLink CssClass="navbar-brand btn btn-outline-light" Font-Names="News706 BT" ID="hlCountry" NavigateUrl="~/Address Book/AdminPanel/Country/Country.aspx" runat="server">Country</asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink CssClass="navbar-brand btn btn-outline-light" Font-Names="News706 BT" ID="hlState" NavigateUrl="~/Address Book/AdminPanel/State/State.aspx" runat="server">State</asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink CssClass="navbar-brand btn btn-outline-light" Font-Names="News706 BT" ID="hlCity" NavigateUrl="~/Address Book/AdminPanel/City/City.aspx" runat="server">City</asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink CssClass="navbar-brand btn btn-outline-light" Font-Names="News706 BT" ID="hlContact" NavigateUrl="~/Address Book/AdminPanel/Contact/Contact.aspx" runat="server">Contact</asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink CssClass="navbar-brand btn btn-outline-light" Font-Names="News706 BT" ID="hlContactCategory" NavigateUrl="~/Address Book/AdminPanel/ContactCategory/ContactCategory.aspx" runat="server">ContactCategory</asp:HyperLink>
+            <hr />
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="Color" style="ba">
+            <div class="col-md-col-12" style="text-align: center; font-family:News706 BT">
+                <h2 style="color:aliceblue">Jenil B. Vasoya  ||  190540107222</h2>
+            </div>
+            <div class="col-md-col-12" style="text-align: center; font-family:News706 BT">
+                <h4 style="color:aliceblue">190540107222@darshan.ac.in</h4>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

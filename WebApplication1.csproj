@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E3803B8-2D88-4C9E-AD36-72F5DCF1F418}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44351</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Address Book\AdminPanel\City\City.aspx" />
+    <Content Include="Address Book\AdminPanel\City\CityAddEdit.aspx" />
+    <Content Include="Address Book\AdminPanel\ContactCategory\ContactCategory.aspx" />
+    <Content Include="Address Book\AdminPanel\ContactCategory\ContactCategoryAddEdit.aspx" />
+    <Content Include="Address Book\AdminPanel\Contact\Contact.aspx" />
+    <Content Include="Address Book\AdminPanel\Contact\ContactAddEdit.aspx" />
+    <Content Include="Address Book\AdminPanel\Country\CountryAddEdit.aspx" />
+    <Content Include="Address Book\AdminPanel\Country\Country.aspx" />
+    <Content Include="Address Book\AdminPanel\HomePage.aspx" />
+    <Content Include="Address Book\AdminPanel\State\State.aspx" />
+    <Content Include="Address Book\AdminPanel\State\StateAddEdit.aspx" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.css" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.rtl.css" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.css" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.css" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap.css" />
+    <Content Include="Address Book\Content\css\bootstrap.min.css" />
+    <Content Include="Address Book\Content\css\bootstrap.rtl.css" />
+    <Content Include="Address Book\Content\css\bootstrap.rtl.min.css" />
+    <Content Include="Address Book\Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Address Book\Content\js\bootstrap.bundle.js" />
+    <Content Include="Address Book\Content\js\bootstrap.bundle.min.js" />
+    <Content Include="Address Book\Content\js\bootstrap.esm.js" />
+    <Content Include="Address Book\Content\js\bootstrap.esm.min.js" />
+    <Content Include="Address Book\Content\js\bootstrap.js" />
+    <Content Include="Address Book\Content\js\bootstrap.min.js" />
+    <Content Include="App_Themes\Themes\StyleSheet1.css" />
+    <Content Include="Bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="Bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="Bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Bootstrap\js\bootstrap.esm.js" />
+    <Content Include="Bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="DUSite\About.aspx" />
+    <Content Include="Images\DIET.jpg" />
+    <Content Include="Images\DIET1.jpg" />
+    <Content Include="Images\download.jfif" />
+    <Content Include="Images\DUlogo.svg" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="ChooseList.aspx" />
+    <Content Include="hlHomePage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address Book\AdminPanel\City\City.aspx.cs">
+      <DependentUpon>City.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\City\City.aspx.designer.cs">
+      <DependentUpon>City.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\City\CityAddEdit.aspx.cs">
+      <DependentUpon>CityAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\City\CityAddEdit.aspx.designer.cs">
+      <DependentUpon>CityAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\ContactCategory\ContactCategory.aspx.cs">
+      <DependentUpon>ContactCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\ContactCategory\ContactCategory.aspx.designer.cs">
+      <DependentUpon>ContactCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\ContactCategory\ContactCategoryAddEdit.aspx.cs">
+      <DependentUpon>ContactCategoryAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\ContactCategory\ContactCategoryAddEdit.aspx.designer.cs">
+      <DependentUpon>ContactCategoryAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Contact\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Contact\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Contact\ContactAddEdit.aspx.cs">
+      <DependentUpon>ContactAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Contact\ContactAddEdit.aspx.designer.cs">
+      <DependentUpon>ContactAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Country\CountryAddEdit.aspx.cs">
+      <DependentUpon>CountryAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Country\CountryAddEdit.aspx.designer.cs">
+      <DependentUpon>CountryAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Country\Country.aspx.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\Country\Country.aspx.designer.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\State\State.aspx.cs">
+      <DependentUpon>State.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\State\State.aspx.designer.cs">
+      <DependentUpon>State.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\State\StateAddEdit.aspx.cs">
+      <DependentUpon>StateAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\AdminPanel\State\StateAddEdit.aspx.designer.cs">
+      <DependentUpon>StateAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address Book\Content\AddressBook.Master.cs">
+      <DependentUpon>AddressBook.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address Book\Content\AddressBook.Master.designer.cs">
+      <DependentUpon>AddressBook.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DUSite\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DUSite\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DUSite\DU.Master.cs">
+      <DependentUpon>DU.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DUSite\DU.Master.designer.cs">
+      <DependentUpon>DU.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseList.aspx.cs">
+      <DependentUpon>ChooseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChooseList.aspx.designer.cs">
+      <DependentUpon>ChooseList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hlHomePage.aspx.cs">
+      <DependentUpon>hlHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hlHomePage.aspx.designer.cs">
+      <DependentUpon>hlHomePage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DUSite\DU.Master" />
+    <Content Include="Bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Address Book\Content\AddressBook.Master" />
+    <Content Include="Address Book\Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Address Book\Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Address Book\Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Address Book\Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap.min.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap.rtl.css.map" />
+    <Content Include="Address Book\Content\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Address Book\Content\js\bootstrap.bundle.js.map" />
+    <Content Include="Address Book\Content\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Address Book\Content\js\bootstrap.esm.js.map" />
+    <Content Include="Address Book\Content\js\bootstrap.esm.min.js.map" />
+    <Content Include="Address Book\Content\js\bootstrap.js.map" />
+    <Content Include="Address Book\Content\js\bootstrap.min.js.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51149</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44351/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
